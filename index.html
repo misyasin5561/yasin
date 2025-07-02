@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Yasin Kuru</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion@4.1.17/dist/framer-motion.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* Using a modern sans-serif font */
+    }
+    .bg-primary-bordeaux { background-color: #800000; }
+    .text-primary-bordeaux { color: #800000; }
+    .border-primary-bordeaux { border-color: #800000; }
+    .bg-primary-blue { background-color: #004080; }
+    .text-primary-blue { color: #004080; }
+    .border-primary-blue { border-color: #004080; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-section {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-primary-bordeaux shadow-lg sticky top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-white hover:text-gray-200">Yasin Kuru</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="py-2 px-3 text-white hover:bg-primary-blue rounded transition duration-300">About Me</a>
+        <a href="skills.html" class="py-2 px-3 text-white hover:bg-primary-blue rounded transition duration-300">Skills</a>
+        <a href="projects.html" class="py-2 px-3 text-white hover:bg-primary-blue rounded transition duration-300">Projects</a>
+        <a href="contact.html" class="py-2 px-3 text-white hover:bg-primary-blue rounded transition duration-300">Contact</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-primary-bordeaux">
+      <a href="index.html" class="block py-2 px-4 text-sm text-white hover:bg-primary-blue transition duration-300">About Me</a>
+      <a href="skills.html" class="block py-2 px-4 text-sm text-white hover:bg-primary-blue transition duration-300">Skills</a>
+      <a href="projects.html" class="block py-2 px-4 text-sm text-white hover:bg-primary-blue transition duration-300">Projects</a>
+      <a href="contact.html" class="block py-2 px-4 text-sm text-white hover:bg-primary-blue transition duration-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-6 py-8">
+    <div class="flex flex-wrap -mx-4">
+
+      <!-- Sidebar -->
+      <aside class="w-full md:w-1/4 px-4 mb-8 md:mb-0 fade-in-section" style="animation-delay: 0.2s;">
+        <div class="bg-white p-6 rounded-lg shadow-xl">
+          <img src="img/profile-photo.jpg" alt="Yasin Kuru" class="avatar w-32 h-32 mx-auto rounded-full mb-4 border-4 border-primary-blue">
+          <h1 class="text-2xl font-bold text-center text-primary-bordeaux mb-1">Yasin Kuru</h1>
+          <h4 class="text-md text-gray-600 text-center mb-4">MIS Student</h4>
+          <div class="space-y-3">
+            <p class="text-sm text-gray-700 flex items-center"><img src="img/contact icon/linkedin.png" alt="LinkedIn" class="w-5 h-5 mr-2"><a href="https://www.linkedin.com/in/yasin-kuru-mis" target="_blank" class="hover:text-primary-blue transition duration-300">yasin_kuru-mis</a></p>
+            <p class="text-sm text-gray-700 flex items-center"><img src="img/contact icon/mail.png" alt="Email" class="w-5 h-5 mr-2"><a href="mailto:ymaisisn61@gmail.com" target="_blank" class="hover:text-primary-blue transition duration-300">ymaisisn61@gmail.com</a></p>
+            <p class="text-sm text-gray-700 flex items-center"><img src="img/contact icon/phone.png" alt="Phone" class="w-5 h-5 mr-2"><span>Send an email for more</span></p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content Area -->
+      <main class="w-full md:w-3/4 px-4">
+        <section class="bg-white p-6 rounded-lg shadow-xl mb-8 fade-in-section" style="animation-delay: 0.4s;">
+          <h2 class="text-3xl font-semibold text-primary-bordeaux mb-4 border-b-2 border-primary-blue pb-2">About Me</h2>
+          <p class="text-gray-700 leading-relaxed">
+            I am Yasin Kuru, a 3rd year student of Management Information Systems at İzmir Bakırçay University. I focus on improving myself in business analysis, data analysis and web test automation. I aim to optimize processes by using technological solutions effectively and add value to businesses with data-based insights. Contributing to problem solving and process improvement with innovative approaches is my biggest motivation.
+          </p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-xl mb-8 fade-in-section" style="animation-delay: 0.6s;">
+          <h2 class="text-3xl font-semibold text-primary-bordeaux mb-6 border-b-2 border-primary-blue pb-2"><i class="fas fa-briefcase mr-2"></i>Experience</h2>
+          <div class="space-y-0">
+            <div class="relative pl-8 border-l-2 border-primary-blue group pt-2 pb-4">
+              <div class="absolute w-4 h-4 bg-primary-bordeaux rounded-full -left-2 top-1/2 -translate-y-1/2 border-2 border-white transition-all duration-300 group-hover:scale-125"></div>
+              <h3 class="text-xl font-semibold text-gray-800">Website Management at EDURESE Academy</h3>
+              <p class="text-sm text-gray-500 mb-1">2024 - Present</p>
+              <p class="text-gray-700 leading-relaxed">Transformed the website from a static promotional site into a fully functional e-commerce platform for course registration. Independently implemented all technical aspects, including integrating registration forms directly into the site and automating order confirmation for bank transfer payments. Stakeholder input—such as visual assets and strategic guidance—was incorporated to ensure alignment with institutional goals.</p>
+            </div>
+            <div class="relative pl-8 border-l-2 border-primary-blue group pt-2 pb-4">
+              <div class="absolute w-4 h-4 bg-primary-bordeaux rounded-full -left-2 top-1/2 -translate-y-1/2 border-2 border-white transition-all duration-300 group-hover:scale-125"></div>
+              <h3 class="text-xl font-semibold text-gray-800">Volunteer at EDURESE Academy</h3>
+              <p class="text-sm text-gray-500 mb-1">2022 - Present</p>
+              <p class="text-gray-700 leading-relaxed">Course Representation and video upload</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-xl fade-in-section" style="animation-delay: 0.8s;">
+          <h2 class="text-3xl font-semibold text-primary-bordeaux mb-6 border-b-2 border-primary-blue pb-2"><i class="fas fa-graduation-cap mr-2"></i>Education</h2>
+          <div class="space-y-0">
+            <div class="relative pl-8 border-l-2 border-primary-blue group pt-2 pb-4">
+                <div class="absolute w-4 h-4 bg-primary-bordeaux rounded-full -left-2 top-1/2 -translate-y-1/2 border-2 border-white transition-all duration-300 group-hover:scale-125"></div>
+                <h3 class="text-xl font-semibold text-gray-800">İzmir Bakırçay University</h3>
+                <p class="text-sm text-gray-500 mb-1">2022 - Present</p>
+                <p class="text-gray-700 leading-relaxed">Management Information Systems</p>
+            </div>
+            <div class="relative pl-8 border-l-2 border-primary-blue group pt-2 pb-4">
+              <div class="absolute w-4 h-4 bg-primary-bordeaux rounded-full -left-2 top-1/2 -translate-y-1/2 border-2 border-white transition-all duration-300 group-hover:scale-125"></div>
+              <h3 class="text-xl font-semibold text-gray-800">İzmir Bakırçay University</h3>
+              <p class="text-sm text-gray-500 mb-1">2021 - 2022</p>
+              <p class="text-gray-700 leading-relaxed">English Preparatory Program</p>
+            </div>
+            <div class="relative pl-8 border-l-2 border-primary-blue group pt-2 pb-4">
+              <div class="absolute w-4 h-4 bg-primary-bordeaux rounded-full -left-2 top-1/2 -translate-y-1/2 border-2 border-white transition-all duration-300 group-hover:scale-125"></div>
+              <h3 class="text-xl font-semibold text-gray-800">Samsun Anatolion Imam Hatip Highschool</h3>
+              <p class="text-sm text-gray-500 mb-1">2017 - 2021</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="bg-primary-blue text-white text-center p-6 mt-12">
+    <p>&copy; 2025 Yasin Kuru. All rights reserved.</p>
+    <div class="mt-4 flex justify-center space-x-4">
+      <a href="https://www.linkedin.com/in/yasin-kuru-mis" target="_blank" class="hover:text-gray-300 transition duration-300">
+        <img src="img/contact icon/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+      </a>
+      <a href="mailto:ymaisisn61@gmail.com" target="_blank" class="hover:text-gray-300 transition duration-300">
+        <img src="img/contact icon/mail.png" alt="Email" class="w-6 h-6">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = mobileMenuButton.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        // Downscroll
+        navbar.style.top = '-80px'; // Adjust based on navbar height
+      } else {
+        // Upscroll
+        navbar.style.top = '0';
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+
+    // Framer Motion for entry animations (example - can be expanded)
+    const motion = window.motion; // Access Framer Motion
+    document.querySelectorAll('.fade-in-section').forEach((el, index) => {
+        motion.animate(el, { opacity: [0, 1], y: [20, 0] }, { duration: 0.5, delay: el.style.animationDelay ? parseFloat(el.style.animationDelay) : index * 0.1 })
+    });
+  </script>
+</body>
+</html>
